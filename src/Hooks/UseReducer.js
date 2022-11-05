@@ -3,7 +3,7 @@ import { useReducer } from "react";
 const UseReducer = () => {
   function setValue(value, count) {
     let num = Number(value);
-    if (String(num) == "NaN" || value == "") {
+    if (String(num) == "NaN" || value == "") {cle
       return count;
     }
     return num;
