@@ -1,38 +1,88 @@
-.App {
+.navigation {
+  display: flex;
+  background-color: #579455;
+  justify-content: end;
+  padding: 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 20px;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  /* border: 1px solid black */
+}
+
+.h1-design {
+  background-color: rgb(26, 108, 122);
+  color: rgb(197, 197, 7);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.error {
   display: flex;
+  justify-content: center;
+}
+
+.error input {
+  width: 50%;
+  margin: 20px;
+  padding: 10px;
+}
+
+.counter {
+  display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  width: 40%;
+}
+
+.counter input {
+  padding: 20px;
+  width: 70%;
+  height: 5px
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.increment {
+  background-color: rgb(89, 168, 89);
   color: white;
+  padding: 10px;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.decrement {
+  background-color: rgb(207, 91, 91);
+  color: white;
+  padding: 10px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset {
+  background-color: rgb(6, 134, 134);
+  color: white;
+  padding: 10px;
+  border: none;
+
 }
